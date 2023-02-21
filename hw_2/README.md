@@ -34,12 +34,12 @@ $ hostnamectl | grep -i "kernel"
 
 ## Result
 ```bash
-# chec hw2/docs/mod.txt
+# check hw2/docs/mod.txt
 ```
 ### command
 ```bash
 $ lsmod > mod.txt
 # or
 $ cat /proc/modules > mod.txt
-# chec hw2/docs/mod.txt
+# cat mod.txt
 ```
