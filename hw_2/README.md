@@ -21,24 +21,25 @@ cp ./internal/config/.env.sample .env
 
 # 2. Define the exact kernel version
 ## Result
-```bash
-# chec hw2/docs/mod.txt
-```
+![Schema](docs/20230221_195400.png)
 
 ### command
 ```bash
 $ uname -srm
 # or
 $ hostnamectl | grep -i "kernel"
-# chec hw2/docs/mod.txt
 ```
 
 # 3. List kernel modules and write to file
 
-
+## Result
+```bash
+# chec hw2/docs/mod.txt
+```
 ### command
 ```bash
 $ lsmod > mod.txt
 # or
 $ cat /proc/modules > mod.txt
+# chec hw2/docs/mod.txt
 ```
