@@ -21,11 +21,10 @@ cp ./internal/config/.env.sample .env
 
 # 2. Define the exact kernel version
 ![Schema](docs/20230221_195400.png)
-## How it do
 
 ### command
 ```bash
 $ uname -srm
 # or
-$  hostnamectl | grep -i "kernel"
+$ hostnamectl | grep -i "kernel"
 ```
