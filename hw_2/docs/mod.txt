@@ -1,0 +1,101 @@
+Module                  Size  Used by
+binfmt_misc            24576  1
+cpuid                  16384  0
+ufs                    81920  0
+qnx4                   16384  0
+hfsplus               110592  0
+hfs                    61440  0
+minix                  36864  0
+ntfs                  106496  0
+msdos                  20480  0
+jfs                   188416  0
+xfs                  1282048  0
+xt_nat                 16384  4
+xt_tcpudp              20480  12
+veth                   28672  0
+xt_conntrack           16384  1
+xt_MASQUERADE          20480  5
+nf_conntrack_netlink    45056  0
+nfnetlink              16384  2 nf_conntrack_netlink
+xfrm_user              36864  1
+xfrm_algo              16384  1 xfrm_user
+xt_addrtype            16384  2
+iptable_filter         16384  1
+iptable_nat            16384  1
+nf_nat                 45056  3 xt_nat,iptable_nat,xt_MASQUERADE
+nf_conntrack          139264  5 xt_conntrack,nf_nat,xt_nat,nf_conntrack_netlink,xt_MASQUERADE
+nf_defrag_ipv6         24576  1 nf_conntrack
+nf_defrag_ipv4         16384  1 nf_conntrack
+bpfilter               32768  0
+br_netfilter           28672  0
+bridge                176128  1 br_netfilter
+stp                    16384  1 bridge
+llc                    16384  2 bridge,stp
+aufs                  262144  0
+overlay               118784  1
+vmw_vsock_vmci_transport    32768  1
+vsock                  36864  2 vmw_vsock_vmci_transport
+dm_multipath           32768  0
+scsi_dh_rdac           16384  0
+scsi_dh_emc            16384  0
+scsi_dh_alua           20480  0
+intel_rapl_msr         20480  0
+intel_rapl_common      24576  1 intel_rapl_msr
+isst_if_mbox_msr       16384  0
+isst_if_common         16384  1 isst_if_mbox_msr
+nfit                   65536  0
+rapl                   20480  0
+vmw_balloon            24576  0
+joydev                 24576  0
+input_leds             16384  0
+serio_raw              20480  0
+vmw_vmci               69632  2 vmw_balloon,vmw_vsock_vmci_transport
+mac_hid                16384  0
+sch_fq_codel           20480  5
+ipmi_devintf           20480  0
+ipmi_msghandler       106496  1 ipmi_devintf
+msr                    16384  0
+ip_tables              32768  2 iptable_filter,iptable_nat
+x_tables               40960  7 xt_conntrack,iptable_filter,xt_tcpudp,xt_addrtype,xt_nat,ip_tables,xt_MASQUERADE
+autofs4                45056  2
+btrfs                1261568  0
+zstd_compress         167936  1 btrfs
+raid10                 61440  0
+raid456               155648  0
+async_raid6_recov      24576  1 raid456
+async_memcpy           20480  2 raid456,async_raid6_recov
+async_pq               24576  2 raid456,async_raid6_recov
+async_xor              20480  3 async_pq,raid456,async_raid6_recov
+async_tx               20480  5 async_pq,async_memcpy,async_xor,raid456,async_raid6_recov
+xor                    24576  2 async_xor,btrfs
+raid6_pq              114688  4 async_pq,btrfs,raid456,async_raid6_recov
+libcrc32c              16384  5 nf_conntrack,nf_nat,btrfs,xfs,raid456
+raid1                  45056  0
+raid0                  24576  0
+multipath              20480  0
+linear                 20480  0
+crct10dif_pclmul       16384  1
+crc32_pclmul           16384  0
+ghash_clmulni_intel    16384  0
+vmwgfx                299008  2
+ttm                   106496  1 vmwgfx
+aesni_intel           372736  0
+drm_kms_helper        184320  1 vmwgfx
+syscopyarea            16384  1 drm_kms_helper
+crypto_simd            16384  1 aesni_intel
+sysfillrect            16384  1 drm_kms_helper
+sysimgblt              16384  1 drm_kms_helper
+fb_sys_fops            16384  1 drm_kms_helper
+cryptd                 24576  2 crypto_simd,ghash_clmulni_intel
+glue_helper            16384  1 aesni_intel
+psmouse               155648  0
+drm                   491520  5 vmwgfx,drm_kms_helper,ttm
+i2c_piix4              28672  0
+mptspi                 24576  2
+mptscsih               40960  1 mptspi
+vmxnet3                57344  0
+mptbase                94208  2 mptspi,mptscsih
+pata_acpi              16384  0
+ahci                   40960  0
+libahci                32768  1 ahci
+scsi_transport_spi     32768  1 mptspi
