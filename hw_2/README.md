@@ -43,3 +43,15 @@ $ lsmod > mod.txt
 $ cat /proc/modules > mod.txt
 # cat mod.txt
 ```
+
+# 4. Display information about CPU, MEM, HDD host and VM
+
+### command
+```bash
+# for CPU
+$ lscpu
+# for MEM
+$ free -m
+# for HDD
+$ lsblk
+```
