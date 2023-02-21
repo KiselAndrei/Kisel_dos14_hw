@@ -28,3 +28,13 @@ $ uname -srm
 # or
 $ hostnamectl | grep -i "kernel"
 ```
+
+# 3. Define the exact kernel version
+![Schema](mod.txt)
+
+### command
+```bash
+$ uname -srm
+# or
+$ hostnamectl | grep -i "kernel"
+```
