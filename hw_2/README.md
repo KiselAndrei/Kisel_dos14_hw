@@ -23,10 +23,9 @@ cp ./internal/config/.env.sample .env
 ![Schema](docs/20230221_195400.png)
 ## How it do
 
-### Turn off default MOTD
+### command
 ```bash
 $ uname -srm
-
 # or
 $  hostnamectl | grep -i "kernel"
 ```
