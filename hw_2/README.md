@@ -1,6 +1,6 @@
 
 # 1. Change MOTD on VM
-
+## Result
 ![Schema](docs/20230221_184121.png)
 
 ## How it do
@@ -20,13 +20,17 @@ cp ./internal/config/.env.sample .env
 ```
 
 # 2. Define the exact kernel version
-![Schema](docs/20230221_195400.png)
+## Result
+```bash
+# chec hw2/docs/mod.txt
+```
 
 ### command
 ```bash
 $ uname -srm
 # or
 $ hostnamectl | grep -i "kernel"
+# chec hw2/docs/mod.txt
 ```
 
 # 3. List kernel modules and write to file
