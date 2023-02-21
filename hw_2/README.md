@@ -29,12 +29,12 @@ $ uname -srm
 $ hostnamectl | grep -i "kernel"
 ```
 
-# 3. Define the exact kernel version
-![Schema](mod.txt)
+# 3. List kernel modules and write to file
+
 
 ### command
 ```bash
-$ uname -srm
+$ lsmod > mod.txt
 # or
-$ hostnamectl | grep -i "kernel"
+$ cat /proc/modules > mod.txt
 ```
