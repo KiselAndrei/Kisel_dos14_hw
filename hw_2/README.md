@@ -1,6 +1,6 @@
 
 # 1. Change MOTD on VM
-## result
+## Result
 ![Schema](docs/20230221_184121.png)
 
 ## How it do
@@ -10,15 +10,21 @@
 $ vi /etc/default/motd-news
 ``` 
 End rewrite ``ENABLED=1`` to ``ENABLED=0``
-### Edit settings
 
-Then create ``.env`` file form the sample and edit:
+### Edit settings
+Then delete exe from:
 ```bash
-cp ./internal/config/.env.sample .env
+$ chmod -x /etc/update-motd.d/*
 ```
 
+### Create new MOTD
+```bash
+$  vi /etc/motd
+# for example check hw2/docs/motd
+``` 
+
 # 2. Define the exact kernel version
-## result
+## Result
 ![Schema](docs/20230221_195400.png)
 
 ### command
@@ -30,7 +36,7 @@ $ hostnamectl | grep -i "kernel"
 
 # 3. List kernel modules and write to file
 
-## result
+## Result
 ```bash
 # check hw2/docs/mod.txt
 ```
